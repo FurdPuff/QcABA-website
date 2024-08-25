@@ -1,18 +1,36 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"
+import Image from 'next/image'
 
 export default function home() {
   return (
     <div className="min-h-screen flex flex-col">
-        <Navbar />
+        <div style={{position: 'absolute', zIndex: '2'}}>
+          <Navbar />
+        </div>
         <main className="flex-grow">
-          <img
-              src="https://static.wixstatic.com/media/11062b_6001d4fc358f416fa7d361ccd2e20414~mv2.jpg/v1/fill/w_2208,h_1130,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/11062b_6001d4fc358f416fa7d361ccd2e20414~mv2.jpg"
-              alt="Collaboration"
-              w-full
-            />
+          <Image
+            src="/Collaboration.jpeg"
+            width={2208}
+            height={1130}
+            alt="Collaboration"
+            style={{marginTop: '-150px', filter: 'brightness(0.6)', zIndex: '1', position: 'relative'}}
+          />
+          <div style={{position: 'relative', marginLeft: '100px', zIndex: '2', color: 'white'}}>
+            <h1 style={{marginTop: '-30%'}}>
+              Empowering Change
+            </h1>
+            <h3>
+              Creating a better tomorrow
+            </h3>
+          </div>
         </main>
+        <section>
+          <h2 style={{position: 'relative', marginTop: '290px'}} className="relative flex-grow flex items-center justify-center">
+            Coming Up Next
+          </h2>
+        </section>
         <Footer />
     </div>
-)
+  )
 }

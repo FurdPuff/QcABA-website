@@ -13,7 +13,7 @@ const Navbar = () => {
     }
   
     return (
-    <nav className="fixed left-[5%] right-[5%] w-[90%] h-10 top-5 shadow-xl bg-neutral-100 dark:bg-[rgb(30,30,40)]">
+    <nav className="fixed left-[2%] right-[2%] w-[96%] h-12 top-5 bg-white dark:bg-[rgb(50,50,60)]">
       <div className="flex justify-between items-center h-full w-full px-16 2xl:px-16">
         <Link href="/">
             <div className="text-xl">QcABA</div>
@@ -21,14 +21,26 @@ const Navbar = () => {
         
         <div className="hidden sm:flex">
             <ul className="hidden sm:flex">
-                <Link href="/page1">
-                    <li className="ml-10 hover:border-b text-l">page1</li>
+                <Link href="/">
+                    <li className="ml-10 hover:border-b text-l">Home</li>
                 </Link>
-                <Link href="/page2">
-                    <li className="ml-10 hover:border-b text-l">page2</li>
+                <Link href="/about">
+                    <li className="ml-10 hover:border-b text-l">About</li>
                 </Link>
-                <Link href="/page3">
-                    <li className="ml-10 hover:border-b text-l">page3</li>
+                <Link href="/aba">
+                    <li className="ml-10 hover:border-b text-l">ABA</li>
+                </Link>
+                <Link href="/events">
+                    <li className="ml-10 hover:border-b text-l">Events</li>
+                </Link>
+                <Link href="/videos">
+                    <li className="ml-10 hover:border-b text-l">Videos</li>
+                </Link>
+                <Link href="/memberships">
+                    <li className="ml-10 hover:border-b text-l">Memberships</li>
+                </Link>
+                <Link href="/groups">
+                    <li className="ml-10 hover:border-b text-l">Groups</li>
                 </Link>
             </ul>
         </div>
@@ -57,28 +69,52 @@ const Navbar = () => {
                         Home
                     </li>
                 </Link>
-                <Link href="/page1">
+                <Link href="/about">
                     <li
                         onClick={() => setMenuOpen(false)}
                         className="py-4 cursor-pointer"
                     >
-                        page1
+                        About
                     </li>
                 </Link>
-                <Link href="/page2">
+                <Link href="/aba">
                     <li
                         onClick={() => setMenuOpen(false)}
                         className="py-4 cursor-pointer"
                     >
-                        page2
+                        ABA
                     </li>
                 </Link>
-                <Link href="/page3">
+                <Link href="/events">
                     <li
                         onClick={() => setMenuOpen(false)}
                         className="py-4 cursor-pointer"
                     >
-                        page3
+                        Events
+                    </li>
+                </Link>
+                <Link href="/videos">
+                    <li
+                        onClick={() => setMenuOpen(false)}
+                        className="py-4 cursor-pointer"
+                    >
+                        Videos
+                    </li>
+                </Link>
+                <Link href="/memberships">
+                    <li
+                        onClick={() => setMenuOpen(false)}
+                        className="py-4 cursor-pointer"
+                    >
+                        Memberships
+                    </li>
+                </Link>
+                <Link href="/groups">
+                    <li
+                        onClick={() => setMenuOpen(false)}
+                        className="py-4 cursor-pointer"
+                    >
+                        Groups
                     </li>
                 </Link>
             </ul>
