@@ -18,16 +18,16 @@ export default function home() {
           />
           <div style={{position: 'relative', marginLeft: '100px', zIndex: '2', color: 'white'}}>
             <h1 style={{marginTop: '-30%'}}>
-              Empowering Change
+              Favoriser le changement
             </h1>
             <h3>
-              Creating a better tomorrow
+              Créer un meilleur avenir
             </h3>
           </div>
         </main>
         <section>
           <h2 style={{position: 'relative', marginTop: '290px'}} className="relative flex-grow flex items-center justify-center">
-            Coming Up Next
+            À suivre
           </h2>
         </section>
         <Footer />

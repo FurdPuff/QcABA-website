@@ -2,8 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineMail} from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineInstagram, AiOutlineMail} from 'react-icons/ai'
 import { useState } from "react"
+import Login from "@/components/Login"
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -22,26 +23,27 @@ const Navbar = () => {
         <div className="hidden sm:flex">
             <ul className="hidden sm:flex">
                 <Link href="/">
-                    <li className="ml-10 hover:border-b text-l">Home</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Home</li>
                 </Link>
                 <Link href="/about">
-                    <li className="ml-10 hover:border-b text-l">About</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">About</li>
                 </Link>
                 <Link href="/aba">
-                    <li className="ml-10 hover:border-b text-l">ABA</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">ABA</li>
                 </Link>
                 <Link href="/events">
-                    <li className="ml-10 hover:border-b text-l">Events</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Events</li>
                 </Link>
                 <Link href="/videos">
-                    <li className="ml-10 hover:border-b text-l">Videos</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Videos</li>
                 </Link>
                 <Link href="/memberships">
-                    <li className="ml-10 hover:border-b text-l">Memberships</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Memberships</li>
                 </Link>
                 <Link href="/groups">
-                    <li className="ml-10 hover:border-b text-l">Groups</li>
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Groups</li>
                 </Link>
+                <Login />
             </ul>
         </div>
         <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
