@@ -14,7 +14,7 @@ const Navbar = () => {
     }
   
     return (
-    <nav className="fixed left-[2%] right-[2%] w-[96%] h-12 top-5 bg-white dark:bg-[rgb(50,50,60)]">
+    <nav className="fixed left-[2%] right-[2%] w-[96%] h-12 top-5 bg-white dark:bg-[rgb(50,50,60)]" style={{zIndex: '999'}}>
       <div className="flex justify-between items-center h-full w-full px-16 2xl:px-16">
         <Link href="/">
             <div className="text-xl">QcABA</div>

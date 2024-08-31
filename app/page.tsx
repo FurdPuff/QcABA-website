@@ -5,9 +5,7 @@ import Image from 'next/image'
 export default function home() {
   return (
     <div className="min-h-screen flex flex-col">
-        <div style={{position: 'absolute', zIndex: '2'}}>
-          <Navbar />
-        </div>
+        <Navbar />
         <main className="flex-grow">
           <Image
             src="/Collaboration.jpeg"
