@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"
 
-export default function page3() {
+export default function groups() {
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar />

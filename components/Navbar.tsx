@@ -2,8 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineMail} from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineInstagram, AiOutlineMail} from 'react-icons/ai'
 import { useState } from "react"
+import Login from "@/components/Login"
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -13,7 +14,7 @@ const Navbar = () => {
     }
   
     return (
-    <nav className="fixed left-[5%] right-[5%] w-[90%] h-10 top-5 shadow-xl bg-neutral-100 dark:bg-[rgb(30,30,40)]">
+    <nav className="fixed left-[2%] right-[2%] w-[96%] h-12 top-5 bg-white dark:bg-[rgb(50,50,60)]" style={{zIndex: '999'}}>
       <div className="flex justify-between items-center h-full w-full px-16 2xl:px-16">
         <Link href="/">
             <div className="text-xl">QcABA</div>
@@ -21,15 +22,28 @@ const Navbar = () => {
         
         <div className="hidden sm:flex">
             <ul className="hidden sm:flex">
-                <Link href="/page1">
-                    <li className="ml-10 hover:border-b text-l">page1</li>
+                <Link href="/">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Home</li>
                 </Link>
-                <Link href="/page2">
-                    <li className="ml-10 hover:border-b text-l">page2</li>
+                <Link href="/about">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">About</li>
                 </Link>
-                <Link href="/page3">
-                    <li className="ml-10 hover:border-b text-l">page3</li>
+                <Link href="/aba">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">ABA</li>
                 </Link>
+                <Link href="/events">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Events</li>
+                </Link>
+                <Link href="/videos">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Videos</li>
+                </Link>
+                <Link href="/memberships">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Memberships</li>
+                </Link>
+                <Link href="/groups">
+                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Groups</li>
+                </Link>
+                <Login />
             </ul>
         </div>
         <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
@@ -57,28 +71,52 @@ const Navbar = () => {
                         Home
                     </li>
                 </Link>
-                <Link href="/page1">
+                <Link href="/about">
                     <li
                         onClick={() => setMenuOpen(false)}
                         className="py-4 cursor-pointer"
                     >
-                        page1
+                        About
                     </li>
                 </Link>
-                <Link href="/page2">
+                <Link href="/aba">
                     <li
                         onClick={() => setMenuOpen(false)}
                         className="py-4 cursor-pointer"
                     >
-                        page2
+                        ABA
                     </li>
                 </Link>
-                <Link href="/page3">
+                <Link href="/events">
                     <li
                         onClick={() => setMenuOpen(false)}
                         className="py-4 cursor-pointer"
                     >
-                        page3
+                        Events
+                    </li>
+                </Link>
+                <Link href="/videos">
+                    <li
+                        onClick={() => setMenuOpen(false)}
+                        className="py-4 cursor-pointer"
+                    >
+                        Videos
+                    </li>
+                </Link>
+                <Link href="/memberships">
+                    <li
+                        onClick={() => setMenuOpen(false)}
+                        className="py-4 cursor-pointer"
+                    >
+                        Memberships
+                    </li>
+                </Link>
+                <Link href="/groups">
+                    <li
+                        onClick={() => setMenuOpen(false)}
+                        className="py-4 cursor-pointer"
+                    >
+                        Groups
                     </li>
                 </Link>
             </ul>
