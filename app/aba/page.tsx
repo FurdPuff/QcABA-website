@@ -9,7 +9,7 @@ export default function aba() {
                 <h2 style={{marginTop: '90px', marginBottom: '40px'}}>
                     What is Behavior Analysis?
                 </h2>
-                <h4 style={{marginLeft: '22%', marginRight: '22%', marginBottom: '100px'}}>
+                <h4 style={{marginLeft: '18%', marginRight: '18%', marginBottom: '100px'}}>
                 Behavior analysis is a scientific approach to understanding behavior and how it is influenced by the environment. It is based on the principles of learning theory, which emphasize the relationship between behavior and the environment. Behavior analysts study the interactions between individuals and their environment to identify patterns of behavior and develop effective interventions to address a wide range of issues.
                 </h4>
             </main>

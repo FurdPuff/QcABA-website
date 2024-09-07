@@ -12,19 +12,20 @@ export default function home() {
             width={2208}
             height={1130}
             alt="Collaboration"
-            style={{marginTop: '-150px', filter: 'brightness(0.6)', zIndex: '1', position: 'relative'}}
+            className="lg:static lg:top-0 top-24"
+            style={{filter: 'brightness(0.6)', zIndex: '1', position: 'relative'}}
           />
-          <div style={{position: 'relative', marginLeft: '100px', zIndex: '2', color: 'white'}}>
-            <h1 style={{marginTop: '-30%'}}>
+          <div style={{position: 'relative', marginLeft: '10%', zIndex: '2', color: 'white'}}>
+            <h2 style={{marginTop: '-30%'}} className="lg:text-7xl">
               Empowering Change
-            </h1>
-            <h3>
+            </h2>
+            <h4 className="lg:text-2xl font-bold">
               Creating a better tomorrow
-            </h3>
+            </h4>
           </div>
         </main>
         <section>
-          <h2 style={{position: 'relative', marginTop: '290px'}} className="relative flex-grow flex items-center justify-center">
+          <h2 style={{position: 'relative', marginTop: '25%'}} className="relative flex-grow flex items-center justify-center">
             Coming Up Next
           </h2>
         </section>

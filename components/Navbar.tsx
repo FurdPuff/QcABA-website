@@ -14,7 +14,7 @@ const Navbar = () => {
     }
   
     return (
-    <nav className="fixed left-[2%] right-[2%] w-[96%] h-12 top-5 bg-white dark:bg-[rgb(50,50,60)]" style={{zIndex: '999'}}>
+    <nav className="fixed left-[2%] right-[2%] w-[96%] h-14 top-5 bg-white dark:bg-[rgb(50,50,60)]" style={{zIndex: '999'}}>
       <div className="flex justify-between items-center h-full w-full px-16 2xl:px-16">
         <Link href="/">
             <div className="text-xl">QcABA</div>
@@ -117,9 +117,15 @@ const Navbar = () => {
                         Groups
                     </li>
                 </Link>
+                <li
+                    onClick={() => setMenuOpen(false)}
+                    className="py-4 cursor-pointer"
+                >
+                    <Login />
+                </li>
             </ul>
         </div>
-       <div className="flex flex-row justify-around pt-8 items-center">
+       <div className="flex flex-row justify-around items-center">
         <Link href="https://www.instagram.com/qcaba1/">
             <AiOutlineInstagram size={65} className="cursor-pointer" />
         </Link>
