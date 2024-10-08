@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className="w-full h-16 outline-1 outline-neutral-500 dark:outline-[#717171] outline">
-            <div className="flex justify-between items-center h-full w-full px-[20%]">
+        <footer className="w-full h-24 outline-1 outline-neutral-500 dark:outline-[#717171] outline"  style={{paddingBottom: '80px'}}>
+            <div className="flex justify-between items-center h-full w-full px-[20%]" style={{paddingTop: '40px'}}>
                 <Link href="/">
                     <div className="text-l sm:text-xl">QcABA</div>
                 </Link>

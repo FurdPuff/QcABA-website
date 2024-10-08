@@ -21,7 +21,7 @@ export default function memberships() {
             </div>
 
             <div className="flex justify-center space-x-8"
-                 style={{marginBottom: '100px', textAlign: 'center', position: 'relative', color: 'black'}}>
+                 style={{marginBottom: '100px', textAlign: 'center', position: 'static', color: 'black'}}>
                 <div style={{width: '20%', backgroundColor: 'white', height: '700px'}}>
                     <h3 style={{marginTop: '20px', marginBottom: '40px'}}>
                         Membre étudiant/Student Member

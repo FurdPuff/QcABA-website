@@ -5,6 +5,20 @@ import Link from 'next/link'
 import {AiOutlineMenu, AiOutlineInstagram, AiOutlineMail, AiOutlineClose} from 'react-icons/ai'
 import { useState } from "react"
 import Login from "@/components/Login"
+import ReactDom from "react-dom/client"
+
+import en from "@/components/translations/en.json"
+import fr from "@/components/translations/fr.json"
+import i18next from "i18next"
+
+i18next.init({
+    interpolation: {escapeValue: false},
+    lng: "en",
+    resources: {
+        en: {en:en},
+        fr: {fr:fr}
+    }
+})
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -12,7 +26,7 @@ const Navbar = () => {
     const handleNav = () => {
         setMenuOpen(!menuOpen)
     }
-  
+
     return (
     <nav className="fixed left-[2%] right-[2%] w-[96%] h-14 top-5 bg-white dark:bg-[rgb(50,50,60)]" style={{zIndex: '999'}}>
       <div className="flex justify-between items-center h-full w-full px-16 2xl:px-16">
@@ -44,6 +58,13 @@ const Navbar = () => {
                     <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Groups</li>
                 </Link>
                 <Login />
+                <select
+                    className="ml-10 text-black dark:text-[rgb(235,235,235)] bg-[rgb(50,50,60)] hover:text-cyan-400 cursor-pointer outline outline-1"
+                    style={{paddingLeft: '6px', paddingRight: '6px', paddingTop: '3px', paddingBottom: '3px'}}
+                >
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
             </ul>
         </div>
         <div onClick={handleNav} className="lg:hidden cursor-pointer pr-7">
