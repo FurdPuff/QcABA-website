@@ -56,3 +56,45 @@ h5 {
   font-weight: normal;
   font-size: 14px;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 50px 400px 100px 400px 100px 400px 100px 400px 100px 400px 100px;
+  grid-template-columns: 150px 400px auto 400px 150px;
+}
+
+.item-1 {
+  grid-area: 2 / 2 / 3 / 3
+}
+
+.item-2 {
+  grid-area: 2 / 4 / 3 / 5
+}
+
+.item-3 {
+  grid-area: 4 / 2 / 5 / 3
+}
+
+.item-4 {
+  grid-area: 4 / 4 / 5 / 5
+}
+
+.item-5 {
+  grid-area: 6 / 2 / 7 / 3
+}
+
+.item-6 {
+  grid-area: 6 / 4 / 7 / 5
+}
+
+.item-7 {
+  grid-area: 8 / 2 / 9 / 3
+}
+
+.item-8 {
+  grid-area: 8 / 4 / 9 / 5
+}
+
+.item-9 {
+  grid-area: 10 / 2 / 11 / 3
+}

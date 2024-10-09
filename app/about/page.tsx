@@ -36,6 +36,79 @@ export default function about() {
                 <h1>
                     Meet The Team
                 </h1>
+                <div className="container">
+                    <Image
+                        src="/QCaBA-about-images/Kirsty Robertson.jpeg"
+                        alt="Kirsty Robertson"
+                        width={400}
+                        height={400}
+                        className="item item-1"
+                    />
+                    
+                    <Image
+                        src="/QCaBA-about-images/Marisa Scaglione.jpeg"
+                        alt="Marisa Scaglione"
+                        width={400}
+                        height={400}
+                        className="item item-2"
+                    />
+
+                    <Image 
+                        src="/QCaBA-about-images/Celia Bocchi.jpeg"
+                        alt="Celia Bocchi"
+                        width={400}
+                        height={400}
+                        className="item item-3"
+                    />
+                    
+                    <Image 
+                        src="/QCaBA-about-images/Trevor Friesen.jpeg"
+                        alt="Trevor Friesen"
+                        width={400}
+                        height={400}
+                        className="item item-4"
+                    />
+
+                    <Image
+                        src="/QCaBA-about-images/Janet Nacouzi.jpeg"
+                        alt="Janet Nacouzi"
+                        width={400}
+                        height={400}
+                        className="item item-5"
+                    />
+
+                    <Image
+                        src="/QCaBA-about-images/Jaime Fernandez.jpeg"
+                        alt="Jaime Fernandez"
+                        width={400}
+                        height={400}
+                        className="item item-6"
+                   />
+
+                    <Image
+                        src="/QCaBA-about-images/Aurelie Fock.jpeg"
+                        alt="Aurelie Fock"
+                        width={400}
+                        height={400}
+                        className="item item-7"
+                    />
+
+                    <Image
+                        src="/QCaBA-about-images/Celina Rust.jpeg"
+                        alt="Celina Rust"
+                        width={400}
+                        height={400}
+                        className="item item-8"
+                    />
+
+                    <Image
+                        src="/QCaBA-about-images/Yuliya Tkachencko.jpeg"
+                        alt="Yuliya Tkachencko"
+                        width={400}
+                        height={400}
+                        className="item item-9"
+                    />
+                </div>
             </main>
             <Footer />
         </div>

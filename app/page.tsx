@@ -4,21 +4,6 @@ import Image from 'next/image'
 import Events from "@/components/Events"
 
 export default function home() {
-  const styles = {
-    container: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '20px',
-      margin: '20px',
-    },
-    image: {
-      borderRadius: '8px',
-    },
-    text: {
-      fontSize: '18px',
-    },
-  };
-  
   return (
     <div className="min-h-screen flex flex-col">
         <Navbar />
@@ -49,19 +34,16 @@ export default function home() {
         <h1 style={{marginLeft: '125px', marginBottom: '20px'}}>
           Our Mission
         </h1>
-        <section style={styles.container}>
-          <h4 style={{marginLeft: '800px',...styles.text}}>
-            At the Québec Association of Behavior Analysis (QcABA), we are dedicated to promoting the principles and practices of behavior analysis to enhance the quality of life for individuals and communities. But what exactly is behavior analysis?
-          </h4>
-          <Image
-            src="/tree.jpeg"
-            width={570}
-            height={405}
-            alt="Trees"
-            style={{marginLeft: '125px', marginBottom: '100px', marginTop: '-1000px',...styles.image}}
-            id="trees"
-          />
-          </section>
+        <h4 style={{marginLeft: '800px', marginRight: '100px'}}>
+          At the Québec Association of Behavior Analysis (QcABA), we are dedicated to promoting the principles and practices of behavior analysis to enhance the quality of life for individuals and communities. But what exactly is behavior analysis?
+        </h4>
+        <Image
+          src="/tree.jpeg"
+          width={570}
+          height={405}
+          alt="Trees"
+          style={{marginLeft: '125px', marginBottom: '100px', marginTop: '-100px'}}
+        />
         <Footer />
     </div>
   )

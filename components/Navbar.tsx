@@ -59,7 +59,7 @@ const Navbar = () => {
                 </Link>
                 <Login />
                 <select
-                    className="ml-10 text-black dark:text-[rgb(235,235,235)] bg-[rgb(50,50,60)] hover:text-cyan-400 cursor-pointer outline outline-1"
+                    className="ml-10 text-black dark:text-[rgb(235,235,235)] dark:bg-[rgb(50,50,60)] hover:text-cyan-400 cursor-pointer outline outline-1"
                     style={{paddingLeft: '6px', paddingRight: '6px', paddingTop: '3px', paddingBottom: '3px'}}
                 >
                     <option value="en">English</option>
