@@ -42,9 +42,6 @@ const Navbar = () => {
                 <Link href="/about">
                     <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">About</li>
                 </Link>
-                <Link href="/aba">
-                    <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">ABA</li>
-                </Link>
                 <Link href="/events">
                     <li className="ml-10 hover:border-b hover:text-cyan-400 transition-colors duration-400">Events</li>
                 </Link>
@@ -96,14 +93,6 @@ const Navbar = () => {
                         className="py-4 cursor-pointer"
                     >
                         About
-                    </li>
-                </Link>
-                <Link href="/aba">
-                    <li
-                        onClick={() => setMenuOpen(false)}
-                        className="py-4 cursor-pointer"
-                    >
-                        ABA
                     </li>
                 </Link>
                 <Link href="/events">

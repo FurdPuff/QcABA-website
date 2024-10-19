@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import Slider from "@/components/slideshow"
 import Image from 'next/image'
 import Events from "@/components/Events"
 
@@ -7,7 +8,7 @@ export default function home() {
   return (
     <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow" style={{marginBottom: '300px'}}>
           <Image
             src="/Collaboration.jpeg"
             width={2208}
@@ -25,13 +26,25 @@ export default function home() {
             </h4>
           </div>
         </main>
+        
+        <main className="w-full absolute bg-[rgb(255,230,255)] dark:bg-[rgb(34,54,85)]" style={{textAlign: 'center', position: 'relative'}}>
+          <h2 style={{marginTop: '90px', marginBottom: '40px'}}>
+              What is Behavior Analysis?
+          </h2>
+          <h4 style={{marginLeft: '18%', marginRight: '18%', marginBottom: '100px'}}>
+          Behavior analysis is a scientific approach to understanding behavior and how it is influenced by the environment. It is based on the principles of learning theory, which emphasize the relationship between behavior and the environment. Behavior analysts study the interactions between individuals and their environment to identify patterns of behavior and develop effective interventions to address a wide range of issues.
+          </h4>
+        </main>
+        <div style={{marginBottom: '60px'}} />
+        <Slider />
+        
         <section>
-          <h1 style={{position: 'relative', marginTop: '25%', marginBottom: '50px'}} className="relative flex-grow flex items-center justify-center">
+          <h1 style={{position: 'absolute', marginTop: '70px', marginBottom: '50px', left: '50%', transform: 'translateX(-50%)'}} className="relative flex-grow flex items-center justify-center">
             Coming Up Next
           </h1>
           <Events />
         </section>
-        <h1 style={{marginLeft: '125px', marginBottom: '20px'}}>
+        <h1 style={{position: 'relative', marginLeft: '125px', marginBottom: '20px'}}>
           Our Mission
         </h1>
         <h4 style={{marginLeft: '800px', marginRight: '100px'}}>

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"
+import Slider from "@/components/slideshow"
 
 export default function videos() {
     return (
